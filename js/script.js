@@ -53,4 +53,4 @@ document.addEventListener("DOMContentLoaded", function () {
       menuNav.classList.toggle("ativo");
     });
   }
-});
+}); 
