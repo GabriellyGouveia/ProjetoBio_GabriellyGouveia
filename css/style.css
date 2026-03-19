@@ -9,7 +9,7 @@
     /* Fundos alternados claríssimos */
     --bg-creme-rosa: #fdf4f4;    /* Tom 1 (Início e Projetos) */
     --bg-blush-suave: #f9ebea;    /* Tom 2 (Sobre Mim e Contato) */
-    --bg-rosado: #f4f0ec;    /* Tom 3 (Habilidades) */
+    --bg-rosado: #f4ecee;    /* Tom 3 (Habilidades) */
     
     --branco-puro: #ffffff;      /* Para os cards saltarem da tela */
     --linha-delicada: rgba(77, 81, 109, 0.2); 
@@ -53,10 +53,11 @@ header {
 
 header h1 {
     font-size: 2rem;
-    color: var(--branco-puro);
+    color: var(--azul-texto); /* Cor alterada para escuro */
     letter-spacing: 1px;
 }
 
+/* Essa parte continua intacta para não quebrar o layout: */
 nav ul {
     list-style: none;
     display: flex;
@@ -64,22 +65,22 @@ nav ul {
 }
 
 nav a {
-    color: var(--branco-puro);
+    color: var(--azul-texto); /* Cor alterada para escuro */
     text-decoration: none;
     font-size: 0.9rem;
     transition: 0.3s;
-    text-transform: lowercase; /* Dá um ar mais moderno e sutil */
+    text-transform: lowercase; 
 }
 
 nav a:hover {
-    color: var(--azul-texto); 
+    color: var(--branco-puro); /* Efeito de contraste branco ao passar o mouse */
 }
 
 #menu-hamburguer {
     display: none;
     background: none;
     border: none;
-    color: var(--branco-puro);
+    color: var(--azul-texto); /* Cor alterada para escuro */
     font-size: 25px;
     cursor: pointer;
 }
@@ -130,15 +131,17 @@ h2 {
 
 .hero-texto h2 {
     text-align: left;
-    font-size: 4.5rem; /* Letra bem grande como na referência */
+    font-size: 4.5rem; 
     line-height: 1.2;
-    color: var(--azul-texto);
+    /* Colocamos a cor mais clara e suave aqui */
+    color: var(--azul-ardosia); 
     margin-bottom: 0;
 }
 
 .nome-destaque {
-    color: var(--azul-ardosia);
-    font-style: italic; /* Toque elegante no nome */
+    /* Colocamos a cor mais forte e escura aqui para dar destaque ao seu nome */
+    color: var(--azul-texto); 
+    font-style: italic; 
 }
 
 .hero-foto-container {
