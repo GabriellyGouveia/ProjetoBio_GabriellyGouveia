@@ -1,0 +1,127 @@
+/* guardando as cores que decidi misturar nas variáveis */
+:root {
+    --azul-escuro: #313c45;
+    --azul-medio: #4f6271;
+    --marrom-escuro: #4a3424; 
+    --marrom-destaque: #654335;
+    --cor-fundo: #f9f8f6; 
+    --cor-texto: #2c2c2c;
+    --cor-branco: #ffffff;
+}
+
+/* reset básico pra tirar as margens zoadas do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* --- HEADER E MENU --- */
+header {
+    background-color: var(--azul-escuro);
+    color: var(--cor-branco);
+    padding: 15px 5%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* deixando o menu grudado no topo da tela */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+img#foto-perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 2px solid var(--marrom-destaque);
+}
+
+/* estilo dos links no desktop */
+nav ul {
+    list-style: none; 
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--cor-branco);
+    text-decoration: none; 
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--marrom-destaque);
+}
+
+/* escondendo o botão hamburguer no PC */
+#menu-hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* --- CARROSSEL DE PROJETOS --- */
+.carrossel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projetos-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth; /* pra rolagem ficar suave ao invés de pular */
+}
+
+/* escondendo a barra de rolagem feia do carrossel */
+.projetos-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* --- MEDIA QUERIES (Responsividade pro Celular) --- */
+@media (max-width: 768px) {
+    /* mostrando o botão hamburguer */
+    #menu-hamburguer {
+        display: block;
+    }
+
+    /* transformando o menu numa lista vertical escondida */
+    #nav-menu {
+        display: none; /* some por padrão */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--azul-medio);
+    }
+
+    /* classe que o JS vai injetar pra fazer o menu aparecer */
+    #nav-menu.ativo {
+        display: block;
+    }
+
+    #nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+}

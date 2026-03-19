@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio - Biografia</title>
+    <title>Gg - Portfólio Gabrielly</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-        <img src="img/eu.jpg" alt="Minha Foto de Perfil" id="foto-perfil">
-        <h1>Gabrielly Gouveia</h1>
-        <nav>
+        <div class="logo-area">
+            <img src="img/eu.jpg" alt="Foto Gabrielly Gouveia" id="foto-perfil">
+            <h1>Gg</h1>
+        </div>
+        
+        <button id="menu-hamburguer">☰</button>
+
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#sobre-mim">Sobre Mim</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -24,77 +28,75 @@
 
     <main>
         <section id="sobre-mim">
-            <h2>Sobre Mim</h2>
-            <p>
-                Olá! Sou estudante de Ciência da Computação na UNICAP e tenho um forte interesse na área de gerenciamento de banco de dados. 
-                Sempre busco entender como as informações são estruturadas e armazenadas de forma eficiente.
-                Nas horas vagas, gosto de explorar diferentes narrativas e construções lógicas através de jogos, além de planejar roteiros detalhados para viagens. 
-                Estou constantemente em busca de novos desafios que unam tecnologia e resolução de problemas práticos.
-            </p>
+            <h2>Oi! Eu sou Gabrielly Gouveia</h2>
+            <div class="sobre-blocos">
+                <article>
+                    <h3>Biografia</h3>
+                    <p>Sou estudante de Ciência da Computação na UNICAP, apaixonada por tecnologia e resolução de problemas...</p>
+                </article>
+                <article>
+                    <h3>Curso</h3>
+                    <p>Atualmente focando bastante nas disciplinas de modelagem e gerenciamento de banco de dados.</p>
+                </article>
+                <article>
+                    <h3>Interesses</h3>
+                    <p>Além de programar, gosto de planejar roteiros aleatórios e pintar.</p>
+                </article>
+            </div>
         </section>
 
         <section id="habilidades">
-            <h2>Habilidades Técnicas</h2>
+            <h2>Habilidades</h2>
             <ul>
-                <li>Modelagem Relacional e Gerenciamento de Banco de Dados</li>
-                <li>Levantamento de Requisitos e Estruturação de Sistemas</li>
-                <li>Controle de Versão (Git e GitHub)</li>
-                <li>Lógica de Programação e Algoritmos</li>
-                <li>Resolução de Problemas e Vivência Corporativa</li>
+                <li>HTML5 Semântico e CSS3</li>
+                <li>JavaScript (Manipulação de DOM)</li>
+                <li>Modelagem de Banco de Dados</li>
+                <li>Git e GitHub</li>
             </ul>
         </section>
 
         <section id="projetos">
             <h2>Meus Projetos</h2>
-            
-            <article class="projeto-item">
-                <h3>Sistema para Clínica Veterinária</h3>
-                <p>Projeto acadêmico focado na modelagem e implementação de um banco de dados para gerenciar registros de animais, prontuários, tutores e agendamentos de uma clínica veterinária.</p>
-            </article>
+            <div class="carrossel-wrapper">
+                <button id="btn-ant" class="seta-carrossel">❮</button>
+                
+                <div class="projetos-container">
+                    <article class="projeto-item">
+                        <h3>Banco de Dados Veterinária</h3>
+                        <p>Modelagem completa para um sistema de clínica.</p>
+                    </article>
+                    <article class="projeto-item">
+                        <h3>Site Biografia</h3>
+                        <p>Meu portfólio web responsivo (este que você está vendo!).</p>
+                    </article>
+                </div>
 
-            <article class="projeto-item">
-                <h3>Portfólio Web (Este site!)</h3>
-                <p>Desenvolvimento de uma mini biografia responsiva utilizando HTML, CSS e JavaScript puros, abordando conceitos de Box Model, validação de formulários e manipulação de eventos.</p>
-            </article>
-            
-            </section>
-
-        <section id="experiencia">
-            <h2>Experiência Profissional</h2>
-            <article class="experiencia-item">
-                <h3>General Motors</h3>
-                <p><strong>Cargo:</strong> Estagiária</p>
-                <p><strong>Período:</strong> Abril de 2026</p>
-                <p>Atuação no ambiente corporativo aplicando conhecimentos técnicos e desenvolvendo novas habilidades na área de tecnologia.</p>
-            </article>
+                <button id="btn-prox" class="seta-carrossel">❯</button>
+            </div>
         </section>
 
         <section id="contato">
-            <h2>Entre em Contato</h2>
+            <h2>Contato</h2>
             <form id="form-contato">
                 <div>
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    <input type="text" id="nome" name="nome">
                 </div>
                 <div>
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                    <input type="email" id="email" name="email">
                 </div>
                 <div>
                     <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
                 </div>
-                <button type="submit">Enviar Mensagem</button>
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <div class="redes-sociais">
-            <a href="https://www.linkedin.com/in/gabriellygouveia/" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/GabriellyGouveia" target="_blank">GitHub</a>
-        </div>
-        <p>&copy; <span id="ano-atual"></span> Gabrielly Gouveia da Silva Feitosa. Todos os direitos reservados.</p>
+        <p>&copy; <span id="ano-atual"></span> Gabrielly Gouveia. Todos os direitos reservados.</p>
     </footer>
 
     <script src="js/script.js"></script>
