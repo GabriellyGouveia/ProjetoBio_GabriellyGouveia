@@ -210,13 +210,16 @@ h2 {
     color: var(--azul-secundario);
 }
 
-.card-habilidade ul {
-    list-style-type: none; /* Tirando as bolinhas pra ficar mais limpo */
-    text-align: center;
+.card ul {
+    list-style-type: disc; /* Mantém as bolinhas */
+    text-align: left; /* Deixa o texto alinhado para leitura fácil */
+    width: fit-content; /* Faz o bloco da lista ter a largura exata do texto */
+    margin: 0 auto; /* Centraliza o bloco inteiro no meio do cartão */
+    padding-left: 20px; /* Dá um espaço de respiro para as bolinhas */
 }
 
-.card-habilidade li {
-    margin-bottom: 10px;
+.card li {
+    margin-bottom: 12px; /* Dá um espacinho um pouco melhor entre as linhas */
 }
 
 /* --- CARROSSEL DE PROJETOS --- */
