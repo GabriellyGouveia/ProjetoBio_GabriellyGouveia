@@ -207,7 +207,7 @@ h2 {
 
 .card p, .card-habilidade ul {
     font-size: 0.95rem;
-    color: var(--azul-secundario);
+    color: var(--azul-texto); /* Trocamos a cor aqui! */
 }
 
 .card ul {
