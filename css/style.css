@@ -254,6 +254,19 @@ h2 {
     font-size: 1.4rem;
 }
 
+.link-projeto {
+    color: #808080; 
+    text-decoration: underline; 
+    position: relative; 
+    z-index: 99; 
+    display: inline-block; 
+    margin-top: 10px; 
+}
+
+.link-projeto:hover {
+    color: #555555; 
+}
+
 .seta-carrossel {
     background-color: transparent;
     color: var(--azul-texto);
