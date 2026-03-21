@@ -6,25 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     spanAno.textContent = new Date().getFullYear();
   }
 
-  // 2. validação do form de contato pra não enviarem vazio
-  const formulario = document.getElementById("form-contato");
-
-  if (formulario) {
-    formulario.addEventListener("submit", function (evento) {
-      evento.preventDefault(); // segura o recarregamento da página
-
-      const nome = document.getElementById("nome").value;
-      const email = document.getElementById("email").value;
-
-      // checando se a galera preencheu tudo certo
-      if (nome.trim() === "" || email.trim() === "") {
-        alert("Eita! Você esqueceu de preencher o nome ou o e-mail.");
-      } else {
-        alert("Mensagem enviada com sucesso, " + nome + "!");
-        formulario.reset(); // limpando os campos depois de enviar
-      }
-    });
-  }
+  // 2. A validação manual do formulário pelo JS foi REMOVIDA!
+  // Agora o HTML (tag 'required') faz a validação e o FormSubmit faz o envio real.
 
   // 3. lógica das setinhas do carrossel de projetos (interação extra exigida)
   const btnProximo = document.getElementById("btn-prox");
@@ -53,4 +36,4 @@ document.addEventListener("DOMContentLoaded", function () {
       menuNav.classList.toggle("ativo");
     });
   }
-}); 
+});

@@ -125,32 +125,37 @@
 </section>
 
         <section id="contato">
-            <div class="conteudo-secao contato-container">
-                <div class="contato-info">
-                    <h1 class="logo-grande">Gg</h1>
-                    <div class="redes-links">
-                        <a href=https://www.linkedin.com/in/gabriellygouveia/ target="_blank">LinkedIn</a>
-                        <a href=https://github.com/GabriellyGouveia target="_blank">GitHub</a>
-                    </div>
-                </div>
-                
-                <form id="form-contato" class="form-estilizado">
-                    <div>
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
-                    </div>
-                    <div>
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="Seu e-mail">
-                    </div>
-                    <div>
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
-                    </div>
-                    <button type="submit">Enviar Mensagem</button>
-                </form>
+    <div class="conteudo-secao contato-container">
+        
+        <div class="contato-info">
+            <h1 class="logo-grande">Gg</h1>
+            <div class="redes-links">
+                <a href="https://www.linkedin.com/in/gabriellygouveia/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/GabriellyGouveia" target="_blank">GitHub</a>
             </div>
-        </section>
+        </div>
+        
+        <form id="form-contato" class="form-estilizado" action="https://formsubmit.co/gabriellygouveiaa@gmail.com" method="POST">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+            </div>
+            
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+            
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+
+    </div>
+</section>
     </main>
 
     <footer>
