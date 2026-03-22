@@ -524,23 +524,37 @@ footer {
 
     /* 2. ajustes da página inicial (hero)*/
     
-    /* reduz o tamanho do texto principal */
+    /* faz o conteúdo ficar um embaixo do outro e centralizado */
+    .hero {
+        flex-direction: column !important; /* força empilhar */
+        padding-top: 30px; /* dá um respiro em cima */
+        justify-content: center !important; /* centraliza na vertical */
+        align-items: center !important; /* centraliza na horizontal */
+        margin: 0 auto !important; /* garante que fique no meio da página */
+    }
+
+    /* ajusta o texto pra não quebrar estranho */
     .hero-texto h2 {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
+        margin-bottom: 20px;
+        text-align: center !important;
     }
 
-    /* diminui o tamanho da área da foto */
+    /* diminui e centraliza a área da foto */
     .hero-foto-container {
-        width: 100%;
-        max-width: 250px; 
-        height: 320px; 
-        margin: 20px auto; 
+        width: 100% !important; /* ocupa a largura disponível */
+        max-width: 260px !important; /* limita pra caber bem no celular */
+        height: 330px !important; /* altura proporcional */
+        margin: 0 auto 40px auto !important; /* centraliza e dá espaço embaixo */
+        position: relative !important; /* mantém base pros elementos internos */
     }
 
-    /* ajusta o posicionamento do elemento decorativo */
+    /* ajusta o bloco decorativo pra não vazar */
     .bloco-composicao {
-        top: 10px;
-        left: 10px;
+        width: 95% !important; /* deixa um pouco menor que o container */
+        height: 95% !important; 
+        top: 12px !important; /* reduz o deslocamento */
+        left: 12px !important;
     }
 
     /* 3. ajustes da página de projetos*/
