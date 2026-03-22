@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     spanAno.textContent = new Date().getFullYear();
   }
 
-  // 3. lógica das setinhas do carrossel de projetos
+  // 2. lógica das setinhas do carrossel de projetos
   const btnProximo = document.getElementById("btn-prox");
   const btnAnterior = document.getElementById("btn-ant");
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 4. menu hamburguer (mobile)
+  // 3. menu hamburguer (mobile)
   const btnHamburguer = document.getElementById("menu-hamburguer");
   const menuNav = document.getElementById("nav-menu");
 
@@ -43,4 +43,46 @@ document.addEventListener("DOMContentLoaded", function () {
       menuNav.classList.toggle("ativo");
     });
   }
+
+  //4. validação personalizada do formulário antes do envio
+
+// pega o formulário de contato
+const formulario = document.getElementById("form-contato");
+
+// verifica se o formulário existe na página
+if (formulario) {
+
+  // adiciona um evento quando o usuário tenta enviar
+  formulario.addEventListener("submit", function (evento) {
+
+    // pega os valores digitados
+    const nome = document.getElementById("nome").value;
+    const mensagem = document.getElementById("mensagem").value;
+
+    // --- Validação 1: nome mínimo ---
+    // remove espaços e verifica se tem pelo menos 3 caracteres
+    if (nome.trim().length < 3) {
+
+      // impede o envio do formulário
+      evento.preventDefault();
+
+      // mostra aviso pro usuário
+      alert("Opa! Por favor, digite um nome com pelo menos 3 letras.");
+      // para o código aqui
+      return;
+    }
+    // --- Validação 2: tamanho da mensagem ---
+    if (mensagem.trim().length < 2) {
+
+      // impede o envio
+      evento.preventDefault();
+
+      // aviso 
+      alert("Sua mensagem está muito curtinha. Escreva um pouco mais para mim!");
+      return;
+    }
+    // se passar nas validações:
+    // o JS não interfere e o FormSubmit faz o envio normalmente
+  });
+}
 });

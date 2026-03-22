@@ -505,4 +505,60 @@ footer {
     .redes-links { 
         align-items: center; 
     }
+
+/*---- AJUSTES PARA MOBILE (até 768px)----*/
+
+@media (max-width: 768px) {
+    
+    /* 1. ajuste geral */
+    
+    /* evita rolagem horizontal indesejada */
+    body, html {
+        overflow-x: hidden;
+    }
+
+    /* diminui o espaçamento das seções pra caber melhor na tela */
+    section {
+        padding: 60px 5%;
+    }
+
+    /* 2. ajustes da página inicial (hero)*/
+    
+    /* reduz o tamanho do texto principal */
+    .hero-texto h2 {
+        font-size: 2.8rem;
+    }
+
+    /* diminui o tamanho da área da foto */
+    .hero-foto-container {
+        width: 100%;
+        max-width: 250px; 
+        height: 320px; 
+        margin: 20px auto; 
+    }
+
+    /* ajusta o posicionamento do elemento decorativo */
+    .bloco-composicao {
+        top: 10px;
+        left: 10px;
+    }
+
+    /* 3. ajustes da página de projetos*/
+    
+    /* reduz tamanho dos cards pra caber melhor */
+    .projeto-item {
+        min-width: 230px;
+        padding: 25px; 
+    }
+
+    /* diminui o título dos projetos */
+    .projeto-item h3 {
+        font-size: 1.2rem;
+    }
+
+    /* aproxima as setas do carrossel */
+    .carrossel-wrapper {
+        gap: 10px;
+    }
+}
 }
