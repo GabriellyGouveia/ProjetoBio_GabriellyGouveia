@@ -1,63 +1,76 @@
 /* --- PALETA DE CORES DEFINITIVA --- */
 :root {
-    --azul-ardosia: #4d516d;    /* Detalhes do menu e interações */
-    --azul-texto: #313c45;       /* Textos principais */
-    --azul-secundario: #778ca4;   /* Textos mais leves/parágrafos */
+    /* Cores principais usadas no site */
+    --azul-ardosia: #4d516d;    /* Usado em detalhes e interações */
+    --azul-texto: #313c45;      /* Cor principal dos textos */
+    --azul-secundario: #778ca4; /* Textos mais suaves */
     
-    --rosa-antigo: #b5848d;      /* Cor principal da barra de navegação */
+    --rosa-antigo: #b5848d;     /* Cor do header/menu */
     
-    /* Fundos alternados claríssimos */
-    --bg-creme-rosa: #fdf4f4;    /* Tom 1 (Início e Projetos) */
-    --bg-blush-suave: #f9ebea;    /* Tom 2 (Sobre Mim e Contato) */
-    --bg-rosado: #f4ecee;    /* Tom 3 (Habilidades) */
+    /* Fundos das seções (alternando pra dar contraste leve) */
+    --bg-creme-rosa: #fdf4f4;   /* Início e Projetos */
+    --bg-blush-suave: #f9ebea;  /* Sobre Mim e Contato */
+    --bg-rosado: #f4ecee;       /* Habilidades */
     
-    --branco-puro: #ffffff;      /* Para os cards saltarem da tela */
-    --linha-delicada: rgba(77, 81, 109, 0.2); 
+    --branco-puro: #ffffff;     /* Cards */
+    --linha-delicada: rgba(77, 81, 109, 0.2); /* Linhas e bordas leves */
 }
 
 /* --- RESET BÁSICO --- */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Evita problemas de tamanho */
 }
 
 body {
-    /* Fonte Poppins para leitura limpa */
+    /* Fonte padrão do site */
     font-family: 'Poppins', sans-serif;
+
+    /* Cor de fundo inicial */
     background-color: var(--bg-creme-rosa); 
+
+    /* Cor padrão dos textos */
     color: var(--azul-texto);
-    line-height: 1.7;
+
+    line-height: 1.7; /* Espaçamento entre linhas */
     font-weight: 300;
 }
 
-/* Fonte Playfair Display para todos os títulos (A estética "Ananya") */
+/* Fonte diferente só para títulos */
 h1, h2, h3, .logo-grande, .nome-destaque {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
-/* --- HEADER MINIMALISTA --- */
+/* --- HEADER --- */
 header {
     background-color: var(--rosa-antigo);
+
+    /* Espaçamento interno */
     padding: 20px 8%;
+
+    /* Layout horizontal */
     display: flex; 
     justify-content: space-between;
     align-items: center;
+
+    /* Fixa no topo ao rolar */
     position: sticky; 
     top: 0;
     z-index: 1000;
-    /* Linha fina e delicada na cor exata que você pediu */
+
+    /* Linha inferior discreta */
     border-bottom: 1px solid var(--azul-ardosia);
 }
 
 header h1 {
     font-size: 2rem;
-    color: var(--azul-texto); /* Cor alterada para escuro */
+    color: var(--azul-texto);
     letter-spacing: 1px;
 }
 
-/* Essa parte continua intacta para não quebrar o layout: */
+/* Menu */
 nav ul {
     list-style: none;
     display: flex;
@@ -65,31 +78,34 @@ nav ul {
 }
 
 nav a {
-    color: var(--azul-texto); /* Cor alterada para escuro */
+    color: var(--azul-texto);
     text-decoration: none;
     font-size: 0.9rem;
     transition: 0.3s;
     text-transform: lowercase; 
 }
 
+/* Efeito ao passar o mouse */
 nav a:hover {
-    color: var(--branco-puro); /* Efeito de contraste branco ao passar o mouse */
+    color: var(--branco-puro);
 }
 
+/* Botão hamburguer (mobile) */
 #menu-hamburguer {
     display: none;
     background: none;
     border: none;
-    color: var(--azul-texto); /* Cor alterada para escuro */
+    color: var(--azul-texto);
     font-size: 25px;
     cursor: pointer;
 }
 
-/* --- SEÇÕES E DIVISÓRIAS (Com as cores que você mapeou) --- */
+/* --- SEÇÕES --- */
 section {
     padding: 100px 8%;
 }
 
+/* Aplicação das cores de fundo por seção */
 #inicio, #projetos {
     background-color: var(--bg-creme-rosa);
 }
@@ -102,15 +118,18 @@ section {
     background-color: var(--bg-rosado);
 }
 
+/* Classe auxiliar */
 .bg-branco {
     background-color: var(--branco-puro);
 }
 
+/* Limita largura do conteúdo */
 .conteudo-secao {
     max-width: 1000px;
     margin: 0 auto;
 }
 
+/* Título das seções */
 h2 {
     font-size: 2.5rem;
     margin-bottom: 60px;
@@ -118,117 +137,136 @@ h2 {
     color: var(--azul-texto); 
 }
 
-/* --- HERO SECTION (INÍCIO) --- */
+/* --- HERO (INÍCIO) --- */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     min-height: 80vh;
+
     max-width: 1000px;
     margin: 0 auto;
+
     gap: 50px;
 }
 
+/* Texto principal */
 .hero-texto h2 {
     text-align: left;
     font-size: 4.5rem; 
     line-height: 1.2;
-    /* Colocamos a cor mais clara e suave aqui */
+
     color: var(--azul-ardosia); 
     margin-bottom: 0;
 }
 
+/* Destaque do nome */
 .nome-destaque {
-    /* Colocamos a cor mais forte e escura aqui para dar destaque ao seu nome */
     color: var(--azul-texto); 
     font-style: italic; 
 }
 
+/* Container da imagem */
 .hero-foto-container {
     position: relative;
     width: 380px;
     height: 480px;
 }
 
-/* Bloco estético mais sutil */
+/* Elemento decorativo atrás da imagem */
 .bloco-composicao {
     position: absolute;
     top: 20px;
     left: 20px;
     width: 100%;
     height: 100%;
-    border: 1px solid var(--azul-ardosia); /* Apenas o contorno vazado, bem chique */
+    border: 1px solid var(--azul-ardosia);
     z-index: 1;
 }
 
+/* Imagem principal */
 .foto-principal {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: 2;
-    /* AQUI ESTÁ A SOMBRA ADICIONADA: Elegante e suave */
+
+    /* Sombra suave */
     box-shadow: 0 15px 35px rgba(49, 60, 69, 0.25);
 }
 
-/* --- GRIDS (SOBRE MIM E HABILIDADES) --- */
+/* --- GRID (CARDS) --- */
 .grid-3-colunas {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
 
+/* Cards padrão */
 .card, .card-habilidade {
     background-color: var(--branco-puro);
     padding: 40px 30px;
     flex: 1;
-    border: 1px solid rgba(0,0,0,0.05); /* Borda quase invisível */
+
+    /* Borda bem leve */
+    border: 1px solid rgba(0,0,0,0.05);
+
+    /* Animação ao interagir */
     transition: transform 0.3s ease;
 }
 
-/* Invertendo a cor do card se ele estiver na seção branca */
+/* Variação de cor quando estiver em fundo branco */
 .bg-branco .card {
     background-color: var(--bg-creme-rosa);
     border: none;
 }
 
+/* Efeito ao passar o mouse */
 .card:hover, .card-habilidade:hover {
     transform: translateY(-5px);
 }
 
+/* Títulos dos cards */
 .card h3, .card-habilidade h3 {
     color: var(--azul-texto);
     margin-bottom: 20px;
     font-size: 1.3rem;
     text-align: center;
+
+    /* Linha decorativa */
     border-bottom: 1px solid var(--linha-delicada);
     padding-bottom: 10px;
 }
 
+/* Conteúdo dos cards */
 .card p, .card-habilidade ul {
     font-size: 0.95rem;
-    color: var(--azul-texto); /* Trocamos a cor aqui! */
+    color: var(--azul-texto);
 }
 
+/* Lista dentro dos cards */
 .card ul {
-    list-style-type: disc; /* Mantém as bolinhas */
-    text-align: left; /* Deixa o texto alinhado para leitura fácil */
-    width: fit-content; /* Faz o bloco da lista ter a largura exata do texto */
-    margin: 0 auto; /* Centraliza o bloco inteiro no meio do cartão */
-    padding-left: 20px; /* Dá um espaço de respiro para as bolinhas */
+    list-style-type: disc;
+    text-align: left;
+    width: fit-content;
+    margin: 0 auto;
+    padding-left: 20px;
 }
 
 .card li {
-    margin-bottom: 12px; /* Dá um espacinho um pouco melhor entre as linhas */
+    margin-bottom: 12px;
 }
 
-/* --- CARROSSEL DE PROJETOS --- */
+/* --- CARROSSEL --- */
 .carrossel-wrapper { 
     display: flex; 
     align-items: center; 
     gap: 20px; 
 }
 
+/* Container com scroll horizontal */
 .projetos-container { 
     display: flex; 
     overflow-x: auto; 
@@ -237,10 +275,12 @@ h2 {
     padding: 20px 0; 
 }
 
+/* Esconde a barra de scroll */
 .projetos-container::-webkit-scrollbar { 
     display: none; 
 }
 
+/* Card de projeto */
 .projeto-item {
     min-width: 320px;
     background: var(--branco-puro);
@@ -254,6 +294,7 @@ h2 {
     font-size: 1.4rem;
 }
 
+/* Link do projeto */
 .link-projeto {
     color: #808080; 
     text-decoration: underline; 
@@ -267,6 +308,7 @@ h2 {
     color: #555555; 
 }
 
+/* Botões do carrossel */
 .seta-carrossel {
     background-color: transparent;
     color: var(--azul-texto);
@@ -290,14 +332,18 @@ h2 {
     align-items: center;
 }
 
-.contato-info { flex: 1; }
+.contato-info { 
+    flex: 1; 
+}
 
+/* Logo maior */
 .logo-grande { 
     font-size: 5rem; 
     color: var(--azul-ardosia); 
     margin-bottom: 30px; 
 }
 
+/* Links de redes */
 .redes-links { 
     display: flex; 
     flex-direction: column; 
@@ -313,11 +359,13 @@ h2 {
     transition: 0.3s;
 }
 
+/* Hover nos links */
 .redes-links a:hover {
     border-bottom: 1px solid var(--azul-ardosia);
     color: var(--azul-ardosia);
 }
 
+/* Formulário */
 .form-estilizado { 
     flex: 1; 
     background: var(--branco-puro); 
@@ -325,9 +373,21 @@ h2 {
     border: 1px solid var(--linha-delicada);
 }
 
-.form-estilizado div { margin-bottom: 20px; }
-.form-estilizado label { display: block; margin-bottom: 8px; font-size: 0.9rem; color: var(--azul-secundario); }
-.form-estilizado input, .form-estilizado textarea { 
+.form-estilizado div { 
+    margin-bottom: 20px; 
+}
+
+/* Labels */
+.form-estilizado label { 
+    display: block; 
+    margin-bottom: 8px; 
+    font-size: 0.9rem; 
+    color: var(--azul-secundario); 
+}
+
+/* Inputs */
+.form-estilizado input, 
+.form-estilizado textarea { 
     width: 100%; 
     padding: 12px; 
     border: none; 
@@ -337,10 +397,14 @@ h2 {
     outline: none;
     color: var(--azul-texto);
 }
-.form-estilizado input:focus, .form-estilizado textarea:focus {
+
+/* Foco nos campos */
+.form-estilizado input:focus, 
+.form-estilizado textarea:focus {
     border-bottom: 1px solid var(--azul-ardosia);
 }
 
+/* Botão */
 .form-estilizado button { 
     background-color: var(--azul-texto); 
     color: var(--branco-puro); 
@@ -353,6 +417,7 @@ h2 {
     width: 100%; 
     transition: 0.3s;
 }
+
 .form-estilizado button:hover { 
     background-color: var(--azul-ardosia); 
 }
@@ -364,23 +429,80 @@ footer {
     text-align: center; 
     padding: 30px; 
     font-size: 0.85rem;
+
+    /* Linha superior */
     border-top: 1px solid var(--linha-delicada);
 }
 
-/* --- RESPONSIVIDADE (MOBILE) --- */
+/* --- RESPONSIVIDADE --- */
 @media (max-width: 900px) {
-    header { padding: 15px 5%; }
+
+    /* Ajuste do header */
+    header { 
+        padding: 15px 5%; 
+    }
     
-    #menu-hamburguer { display: block; }
-    #nav-menu { display: none; position: absolute; top: 70px; left: 0; width: 100%; background-color: var(--rosa-antigo); border-bottom: 1px solid var(--linha-delicada); }
-    #nav-menu.ativo { display: block; }
-    #nav-menu ul { flex-direction: column; text-align: center; padding: 30px 0; gap: 20px;}
+    /* Mostra o botão hamburguer */
+    #menu-hamburguer { 
+        display: block; 
+    }
+
+    /* Menu escondido inicialmente */
+    #nav-menu { 
+        display: none; 
+        position: absolute; 
+        top: 70px; 
+        left: 0; 
+        width: 100%; 
+        background-color: var(--rosa-antigo); 
+        border-bottom: 1px solid var(--linha-delicada); 
+    }
+
+    /* Classe ativada via JS */
+    #nav-menu.ativo { 
+        display: block; 
+    }
+
+    #nav-menu ul { 
+        flex-direction: column; 
+        text-align: center; 
+        padding: 30px 0; 
+        gap: 20px;
+    }
     
-    .hero { flex-direction: column; text-align: center; padding-top: 50px; }
-    .hero-texto h2 { text-align: center; font-size: 3.5rem; }
-    .hero-foto-container { width: 100%; max-width: 350px; height: 400px; margin-top: 30px; }
+    /* Ajustes da hero */
+    .hero { 
+        flex-direction: column; 
+        text-align: center; 
+        padding-top: 50px; 
+    }
+
+    .hero-texto h2 { 
+        text-align: center; 
+        font-size: 3.5rem; 
+    }
+
+    .hero-foto-container { 
+        width: 100%; 
+        max-width: 350px; 
+        height: 400px; 
+        margin-top: 30px; 
+    }
     
-    .grid-3-colunas { flex-direction: column; gap: 30px; }
-    .contato-container { flex-direction: column; text-align: center; gap: 40px; }
-    .redes-links { align-items: center; }
+    /* Grid vira coluna */
+    .grid-3-colunas { 
+        flex-direction: column; 
+        gap: 30px; 
+    }
+
+    /* Contato em coluna */
+    .contato-container { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 40px; 
+    }
+
+    .redes-links { 
+        align-items: center; 
+    }
 }

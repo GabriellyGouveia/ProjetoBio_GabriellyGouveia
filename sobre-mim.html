@@ -2,17 +2,31 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
     <title>Sobre Mim - Gg</title>
+
+    <!-- Importação da fonte usadas no site -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
+        <!-- Logo com as iniciais -->
         <div class="logo-area">
             <h1>Gg</h1>
         </div>
+
+        <!-- Botão do menu hamburguer (mobile) -->
         <button id="menu-hamburguer">☰</button>
+
+        <!-- Navegação entre páginas -->
         <nav id="nav-menu">
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -25,31 +39,64 @@
     </header>
 
     <main>
+        <!-- Seção "Sobre Mim" -->
         <section id="sobre-mim" class="bg-tom2">
             <div class="conteudo-secao">
+
+                <!-- Título da seção -->
                 <h2>Sobre Mim</h2>
+
+                <!-- Grid com 3 colunas (cards) -->
                 <div class="grid-3-colunas">
+
+                    <!-- Card: Biografia -->
                     <article class="card">
                         <h3>Biografia</h3>
-                        <p>Sou a Gabrielly, uma pessoa curiosa e sempre disposta a aprender e testar coisas novas. Fora das telas, valorizo muito o tempo com quem gosto, adoro pintar, ler um bom livro e conhecer lugares novos. Acredito que a tecnologia ganha seu verdadeiro propósito quando é usada para criar soluções eficientes e gerar um impacto positivo real na vida das pessoas.</p>
+                        <!-- Texto mais pessoal -->
+                        <p>
+                            Sou a Gabrielly, uma pessoa curiosa e sempre disposta a aprender e testar coisas novas. 
+                            Fora das telas, valorizo muito o tempo com quem gosto, adoro pintar, ler um bom livro e conhecer lugares novos. 
+                            Acredito que a tecnologia ganha seu verdadeiro propósito quando é usada para criar soluções eficientes e gerar um impacto positivo real na vida das pessoas.
+                        </p>
                     </article>
+
+                    <!-- Card: Curso -->
                     <article class="card">
                         <h3>Curso</h3>
-                        <p>Sou estudante de Ciência da Computação na Universidade Católica de Pernambuco (UNICAP). Durante a graduação, construí uma base prática e sigo me desenvolvendo em diversas áreas de atuação. Atualmente, tenho me interessado muito nas disciplinas que envolvem planejamento e dados, pois gosto de tirar a teoria do papel e aplicar esses conhecimentos na estruturação de sistemas do mundo real.</p>
+                        <!-- Parte mais acadêmica -->
+                        <p>
+                            Sou estudante de Ciência da Computação na Universidade Católica de Pernambuco (UNICAP). 
+                            Durante a graduação, construí uma base prática e sigo me desenvolvendo em diversas áreas de atuação. 
+                            Atualmente, tenho me interessado muito nas disciplinas que envolvem planejamento e dados, pois gosto de tirar a teoria do papel e aplicar esses conhecimentos na estruturação de sistemas do mundo real.
+                        </p>
                     </article>
+
+                    <!-- Card: Interesses -->
                     <article class="card">
                         <h3>Interesses</h3>
-                        <p>Profissionalmente, venho direcionando meus estudos com muito foco para a área de Dados e Inteligência Artificial, aprofundando meus conhecimentos em estatística e ferramentas como SQL, Power BI e Excel. Meu grande objetivo é construir uma carreira sólida no setor de tecnologia, desenvolvendo inovações que unam a análise de dados com a melhoria contínua da sociedade.</p>
+                        <!-- Foco profissional -->
+                        <p>
+                            Profissionalmente, venho direcionando meus estudos com muito foco para a área de Dados e Inteligência Artificial, 
+                            aprofundando meus conhecimentos em estatística e ferramentas como SQL, Power BI e Excel. 
+                            Meu grande objetivo é construir uma carreira sólida no setor de tecnologia, desenvolvendo inovações que unam a análise de dados com a melhoria contínua da sociedade.
+                        </p>
                     </article>
+
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="ano-atual"></span> Gabrielly Gouveia Da Silva Feitosa. Todos os direitos reservados.</p>
+        <!-- Rodapé com ano automático -->
+        <p>
+            &copy; <span id="ano-atual"></span> 
+            Gabrielly Gouveia Da Silva Feitosa. 
+            Todos os direitos reservados.
+        </p>
     </footer>
 
+    <!-- Script JS -->
     <script src="js/script.js"></script>
 </body>
 </html>

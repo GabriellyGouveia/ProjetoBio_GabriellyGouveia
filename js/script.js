@@ -2,37 +2,44 @@
 document.addEventListener("DOMContentLoaded", function () {
   // 1. pegando o ano atual pro rodapé (pra não precisar mudar na mão todo ano)
   const spanAno = document.getElementById("ano-atual");
+
+  // verifica se o elemento existe na página antes de usar
   if (spanAno) {
+    // insere automaticamente o ano atual
     spanAno.textContent = new Date().getFullYear();
   }
 
-  // 2. A validação manual do formulário pelo JS foi REMOVIDA!
-  // Agora o HTML (tag 'required') faz a validação e o FormSubmit faz o envio real.
-
-  // 3. lógica das setinhas do carrossel de projetos (interação extra exigida)
+  // 3. lógica das setinhas do carrossel de projetos
   const btnProximo = document.getElementById("btn-prox");
   const btnAnterior = document.getElementById("btn-ant");
+
+  // container que guarda os projetos (onde acontece o scroll)
   const containerProjetos = document.querySelector(".projetos-container");
 
+  // botão de avançar
   if (btnProximo && containerProjetos) {
     btnProximo.addEventListener("click", function () {
-      containerProjetos.scrollBy({ left: 300, behavior: "smooth" }); // rola 300px pra direita
+      // rola o container 300px pra direita com animação suave
+      containerProjetos.scrollBy({ left: 300, behavior: "smooth" });
     });
   }
 
+  // botão de voltar
   if (btnAnterior && containerProjetos) {
     btnAnterior.addEventListener("click", function () {
-      containerProjetos.scrollBy({ left: -300, behavior: "smooth" }); // rola 300px pra esquerda
+      // rola 300px pra esquerda
+      containerProjetos.scrollBy({ left: -300, behavior: "smooth" });
     });
   }
 
-  // 4. fazendo o menu hamburguer abrir e fechar no mobile
+  // 4. menu hamburguer (mobile)
   const btnHamburguer = document.getElementById("menu-hamburguer");
   const menuNav = document.getElementById("nav-menu");
 
   if (btnHamburguer && menuNav) {
     btnHamburguer.addEventListener("click", function () {
-      // se tiver a classe 'ativo', ele tira. se não tiver, ele bota.
+      // adiciona ou remove a classe "ativo"
+      // isso controla se o menu aparece ou não no CSS
       menuNav.classList.toggle("ativo");
     });
   }

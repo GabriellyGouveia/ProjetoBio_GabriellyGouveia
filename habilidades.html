@@ -2,17 +2,31 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
     <title>Habilidades - Gg</title>
+
+    <!-- Importação das fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
+        <!-- Logo com iniciais -->
         <div class="logo-area">
             <h1>Gg</h1>
         </div>
+
+        <!-- Botão de menu (mobile) -->
         <button id="menu-hamburguer">☰</button>
+
+        <!-- Menu de navegação -->
         <nav id="nav-menu">
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -25,12 +39,21 @@
     </header>
 
     <main>
+        <!-- Seção de habilidades -->
         <section id="habilidades" class="bg-tom3">
             <div class="conteudo-secao">
+
+                <!-- Título -->
                 <h2>Habilidades</h2>
+
+                <!-- Grid com os cards -->
                 <div class="grid-3-colunas">
+
+                    <!-- Card: Hard Skills -->
                     <article class="card">
                         <h3>Hard Skills</h3>
+
+                        <!-- Lista de habilidades técnicas -->
                         <ul>
                             <li>Python, C & Java</li>
                             <li>SQL & Banco de Dados</li>
@@ -38,8 +61,12 @@
                             <li>Design de Interfaces</li>
                         </ul>
                     </article>
+
+                    <!-- Card: Soft Skills -->
                     <article class="card">
                         <h3>Soft Skills</h3>
+
+                        <!-- Lista de habilidades comportamentais -->
                         <ul>
                             <li>Curiosidade Contínua</li>
                             <li>Resolução de Problemas</li>
@@ -47,15 +74,22 @@
                             <li>Organização</li>
                         </ul>
                     </article>
+
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="ano-atual"></span> Gabrielly Gouveia Da Silva Feitosa. Todos os direitos reservados.</p>
+        <!-- Rodapé padrão com ano automático -->
+        <p>
+            &copy; <span id="ano-atual"></span> 
+            Gabrielly Gouveia Da Silva Feitosa. 
+            Todos os direitos reservados.
+        </p>
     </footer>
 
+    <!-- Script JS -->
     <script src="js/script.js"></script>
 </body>
 </html>

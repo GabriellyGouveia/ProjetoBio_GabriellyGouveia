@@ -2,17 +2,31 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
     <title>Projetos - Gg</title>
+
+    <!-- Fontes do Google -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
+        <!-- Logo -->
         <div class="logo-area">
             <h1>Gg</h1>
         </div>
+
+        <!-- Botão do menu hamburguer -->
         <button id="menu-hamburguer">☰</button>
+
+        <!-- Navegação -->
         <nav id="nav-menu">
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -25,32 +39,69 @@
     </header>
 
     <main>
+        <!-- Seção de projetos -->
         <section id="projetos" class="bg-secundario">
             <div class="conteudo-secao">
+
+                <!-- Título -->
                 <h2>Projetos</h2>
+
+                <!-- Wrapper do carrossel -->
                 <div class="carrossel-wrapper">
+
+                    <!-- Botão para voltar no carrossel -->
                     <button id="btn-ant" class="seta-carrossel">❮</button>
                     
+                    <!-- Container que guarda todos os projetos -->
                     <div class="projetos-container">
+
+                        <!-- Projeto 1 -->
                         <article class="projeto-item">
                             <h3>Portfólio Pessoal</h3>
-                            <p>Desenvolvimento do meu site pessoal, projetado para apresentar minha trajetória acadêmica na área de tecnologia, minhas habilidades e os principais projetos práticos em que venho trabalhando.</p>
-                            <a href="https://github.com/GabriellyGouveia/ProjetoBio_GabriellyGouveia" target="_blank" class="link-projeto">Conferir repositório no GitHub</a>
+
+                            <!-- Descrição -->
+                            <p>
+                                Desenvolvimento do meu site pessoal, projetado para apresentar minha trajetória acadêmica na área de tecnologia, 
+                                minhas habilidades e os principais projetos práticos em que venho trabalhando.
+                            </p>
+
+                            <!-- Link para o GitHub -->
+                            <a href="https://github.com/GabriellyGouveia/ProjetoBio_GabriellyGouveia" target="_blank" class="link-projeto">
+                                Conferir repositório no GitHub
+                            </a>
                         </article>
 
+                        <!-- Projeto 2 -->
                         <article class="projeto-item">
                             <h3>Sistema de um E-commerce de Ótica</h3>
-                            <p>Projeto focado na modelagem e estruturação de um banco de dados relacional para um e-commerce do ramo de ótica, visando a organização eficiente de informações de produtos, clientes e transações de vendas.</p>
-                            <a href="https://github.com/GabriellyGouveia/Projeto-BD" target="_blank" class="link-projeto">Conferir repositório no GitHub</a>
+
+                            <p>
+                                Projeto focado na modelagem e estruturação de um banco de dados relacional para um e-commerce do ramo de ótica, 
+                                visando a organização eficiente de informações de produtos, clientes e transações de vendas.
+                            </p>
+
+                            <a href="https://github.com/GabriellyGouveia/Projeto-BD" target="_blank" class="link-projeto">
+                                Conferir repositório no GitHub
+                            </a>
                         </article>
                         
+                        <!-- Projeto 3 -->
                         <article class="projeto-item">
                             <h3>Sistema de Gerenciamento para Clínicas (SGC)</h3>
-                            <p>Sistema desenvolvido para gerenciar as atividades de uma clínica médica particular, oferecendo aos usuários uma interface simplificada. O objetivo principal é otimizar a administração, facilitar o fluxo de atendimento e tornar os serviços da clínica mais acessíveis aos pacientes.</p>
-                            <a href="https://github.com/GabriellyGouveia/Sistema-de-Gerenciamento-para-Clinicas" target="_blank" class="link-projeto">Conferir repositório no GitHub</a>
+
+                            <p>
+                                Sistema desenvolvido para gerenciar as atividades de uma clínica médica particular, oferecendo aos usuários uma interface simplificada. 
+                                O objetivo principal é otimizar a administração, facilitar o fluxo de atendimento e tornar os serviços da clínica mais acessíveis aos pacientes.
+                            </p>
+
+                            <a href="https://github.com/GabriellyGouveia/Sistema-de-Gerenciamento-para-Clinicas" target="_blank" class="link-projeto">
+                                Conferir repositório no GitHub
+                            </a>
                         </article>
+
                     </div>
 
+                    <!-- Botão para avançar no carrossel -->
                     <button id="btn-prox" class="seta-carrossel">❯</button>
                 </div>
             </div>
@@ -58,9 +109,15 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="ano-atual"></span> Gabrielly Gouveia Da Silva Feitosa. Todos os direitos reservados.</p>
+        <!-- Rodapé padrão -->
+        <p>
+            &copy; <span id="ano-atual"></span> 
+            Gabrielly Gouveia Da Silva Feitosa. 
+            Todos os direitos reservados.
+        </p>
     </footer>
 
+    <!-- Script JS (responsável por interações como carrossel e menu) -->
     <script src="js/script.js"></script>
 </body>
 </html>

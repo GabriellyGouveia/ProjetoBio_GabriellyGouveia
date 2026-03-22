@@ -2,19 +2,34 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Responsividade: faz o site se adaptar a telas menores -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da aba do navegador -->
     <title>Gg - Portfólio Gabrielly</title>
+
+    <!-- Importação de fontes do Google para estilização do texto -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Arquivo CSS principal -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
+        <!-- Área da logo (iniciais como identidade visual) -->
         <div class="logo-area">
             <h1>Gg</h1>
         </div>
+
+        <!-- Botão do menu hamburguer (usado no mobile) -->
         <button id="menu-hamburguer">☰</button>
+
+        <!-- Menu de navegação do site -->
         <nav id="nav-menu">
             <ul>
+                <!-- Links para as páginas do portfólio -->
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre-mim.html">Sobre Mim</a></li>
                 <li><a href="habilidades.html">Habilidades</a></li>
@@ -25,21 +40,42 @@
     </header>
 
     <main>
+        <!-- Seção principal (hero) com apresentação -->
         <section id="inicio" class="hero">
+            
+            <!-- Texto de apresentação -->
             <div class="hero-texto">
-                <h2>Oi!<br>Eu Sou<br><span class="nome-destaque">Gabrielly<br>Gouveia</span></h2>
+                <!-- Uso de <br> para quebrar linha e dar estilo visual -->
+                <h2>
+                    Oi!<br>
+                    Eu Sou<br>
+                    <span class="nome-destaque">
+                        Gabrielly<br>Gouveia
+                    </span>
+                </h2>
             </div>
+
+            <!-- Área da imagem -->
             <div class="hero-foto-container">
+                <!-- Elemento decorativo para composição visual -->
                 <div class="bloco-composicao"></div>
+
+                <!-- Imagem principal -->
                 <img src="img/euverde.jpeg" alt="Foto Gabrielly Gouveia" class="foto-principal">
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="ano-atual"></span> Gabrielly Gouveia Da Silva Feitosa. Todos os direitos reservados.</p>
+        <!-- Rodapé com ano dinâmico -->
+        <p>
+            &copy; <span id="ano-atual"></span> 
+            Gabrielly Gouveia Da Silva Feitosa. 
+            Todos os direitos reservados.
+        </p>
     </footer>
 
+    <!-- Script JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
