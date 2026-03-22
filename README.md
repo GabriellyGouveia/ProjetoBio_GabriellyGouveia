@@ -1,6 +1,6 @@
-# 📌 Projeto Bio - Portfólio Pessoal  
+#  Projeto Bio - Portfólio Pessoal  
 
-## 📖 Sobre o Projeto  
+##  Sobre o Projeto  
 
 Este projeto consiste no desenvolvimento de um site responsivo do tipo Mini Biografia (Bio), elaborado como atividade da disciplina de Programação Web e Mobile do curso de Ciência da Computação (UNICAP).  
 
@@ -10,7 +10,7 @@ A aplicação foi construída com HTML, CSS e JavaScript, mantendo a separação
 
 ---
 
-## 🧩 Estrutura do Projeto  
+##  Estrutura do Projeto  
 
 O projeto segue a seguinte organização de arquivos:  
 
@@ -31,7 +31,7 @@ O projeto segue a seguinte organização de arquivos:
 
 ---
 
-## ⚙️ Tecnologias Utilizadas  
+##  Tecnologias Utilizadas  
 
 - HTML  
 - CSS  
@@ -39,18 +39,19 @@ O projeto segue a seguinte organização de arquivos:
 
 ---
 
-## 📱 Funcionalidades  
+##  Funcionalidades  
 
-- Estrutura semântica utilizando `header`, `section` e `footer`  
+- Estrutura semântica utilizando header, nav, main, section, article e footer
 - Layout responsivo com uso de Flexbox e Media Queries  
 - Estilização personalizada com efeitos de hover e transições  
 - Menu de navegação responsivo (menu hamburguer)  
-- Carrossel de projetos com navegação por botões  
+- Carrossel de projetos com navegação por botões
+- Validação customizada de formulário utilizando JavaScript  
 - Exibição automática do ano atual no rodapé com JavaScript  
 
 ---
 
-## 📄 Seções do Site  
+##  Seções do Site  
 
 - **Início:** apresentação inicial  
 - **Sobre Mim:** biografia, curso e interesses  
@@ -61,7 +62,7 @@ O projeto segue a seguinte organização de arquivos:
 
 ---
 
-## 🎯 Considerações  
+##  Considerações  
 
 O desenvolvimento deste projeto permitiu a aplicação prática de conceitos fundamentais de desenvolvimento web, como organização de arquivos, responsividade e interatividade com JavaScript.  
 
